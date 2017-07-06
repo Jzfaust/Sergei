@@ -19,13 +19,31 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_action_triggered();
 
-    void on_pushButton_3_clicked();
+    void on_action_3_triggered();
 
-    void on_pushButton_2_clicked();
+    void on_action_5_triggered();
 
-    void on_pushButton_4_clicked();
+    void on_action_6_triggered();
+
+    void on_action_7_triggered();
+
+    void on_action_8_triggered();
+
+    void on_action_9_triggered();
+
+    void on_action_10_triggered();
+
+    void on_action_11_triggered();
+
+    void on_action_12_triggered();
+
+    void on_action_13_triggered();
+
+    void on_action_14_triggered();
+
+    void on_action_2_triggered();
 
 private:
     Ui::MainWindow *ui;

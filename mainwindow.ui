@@ -7,49 +7,24 @@
     <x>0</x>
     <y>0</y>
     <width>675</width>
-    <height>453</height>
+    <height>468</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="myresourse.qrc">
+    <normaloff>:/Images/jug.png</normaloff>:/Images/jug.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="tabletTracking">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="myresourse.qrc">
-      <normaloff>:/Images/get (1).jpg</normaloff>:/Images/get (1).jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>70</width>
-      <height>60</height>
-     </size>
-    </property>
-   </widget>
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
      <rect>
       <x>150</x>
       <y>10</y>
       <width>501</width>
-      <height>351</height>
+      <height>391</height>
      </rect>
     </property>
     <property name="mouseTracking">
@@ -57,78 +32,6 @@
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="myresourse.qrc">
-      <normaloff>:/Images/get (2).jpg</normaloff>:/Images/get (2).jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>70</width>
-      <height>35</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>110</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>get (7).jpg</normaloff>get (7).jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>70</width>
-      <height>35</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>150</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="myresourse.qrc">
-      <normaloff>:/Images/get (3).jpg</normaloff>:/Images/get (3).jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>70</width>
-      <height>35</height>
-     </size>
     </property>
    </widget>
   </widget>
@@ -146,11 +49,23 @@
      <string>Файл</string>
     </property>
     <addaction name="action_2"/>
+    <addaction name="action"/>
+    <addaction name="action_14"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
      <string>Элементы</string>
     </property>
+    <addaction name="action_3"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="action_7"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="action_13"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -162,6 +77,16 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="action_3"/>
+   <addaction name="action_5"/>
+   <addaction name="action_6"/>
+   <addaction name="action_7"/>
+   <addaction name="action_8"/>
+   <addaction name="action_9"/>
+   <addaction name="action_10"/>
+   <addaction name="action_11"/>
+   <addaction name="action_12"/>
+   <addaction name="action_13"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="toolBar">
@@ -180,43 +105,110 @@
     <string>Сохранить</string>
    </property>
   </action>
+  <action name="action">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (1).jpg</normaloff>:/Images/get (1).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Терминатор</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (2).jpg</normaloff>:/Images/get (2).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Решение</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (7).jpg</normaloff>:/Images/get (7).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Линия</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (3).jpg</normaloff>:/Images/get (3).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Данные</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (4).jpg</normaloff>:/Images/get (4).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Подготовка</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (5).jpg</normaloff>:/Images/get (5).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Процесс</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (6.1).jpg</normaloff>:/Images/get (6.1).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Начало цикла</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (6.2).jpg</normaloff>:/Images/get (6.2).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Конец цикла</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get.jpg</normaloff>:/Images/get.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Соединитель</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="icon">
+    <iconset resource="myresourse.qrc">
+     <normaloff>:/Images/get (9).jpg</normaloff>:/Images/get (9).jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Линия(горизонтальная)</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="myresourse.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>graphicsView</receiver>
-   <slot>invalidateScene()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>66</x>
-     <y>73</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>213</x>
-     <y>110</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_3</sender>
-   <signal>clicked()</signal>
-   <receiver>graphicsView</receiver>
-   <slot>invalidateScene()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>82</x>
-     <y>173</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>166</x>
-     <y>187</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
